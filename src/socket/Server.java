@@ -17,7 +17,7 @@ public class Server {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        // TODO code application logic here
+
        ServerSocket servsock = new ServerSocket(9000);
        ServerSocket servsocket = new ServerSocket(10000);
        String put = "PUT";
@@ -111,7 +111,6 @@ public class Server {
                          }
                     }else{
                         oss.writeObject(icerik);
-                         //System.out.println(icerik);
                         oku.close();
                         break;
                     }
